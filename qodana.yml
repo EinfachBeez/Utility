@@ -1,0 +1,4 @@
+version: "1.0"
+failThreshold: 10
+profile:
+  name: qodana.starter

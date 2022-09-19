@@ -1,0 +1,12 @@
+.idea/
+
+# Test Sources
+**/src/test
+
+# Compiled files
+**/out
+**/target
+*.class
+
+# Config Files
+config.json
