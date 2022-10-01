@@ -20,6 +20,7 @@ public class ModalListener extends ListenerAdapter {
             if (!modalEntry.getValue().getId().equals(event.getModalId())) return;
             if (event.getMember() == null) return;
             if (!modalEntry.getKey().getId().equals(event.getMember().getId())) return;
+            if (event.isAcknowledged()) return;
 
             List<ModalMapping> modalMappings = event.getValues();
             modalEntry.getValue().getOnSubmit().accept(event.getMember(), modalMappings, event);
